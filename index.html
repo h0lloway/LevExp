@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leverans Express</title>
+  <link rel="icon" href="favicon.ico">
+
+
+  <!-- fonts -->
+  <!-- fonts -->
+
+  <!-- <link rel="prefetch" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin> -->
+  <!-- <link rel="prefetch" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin> -->
+  <!-- <link rel="prefetch" href="fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin> -->
+
+
+  <!-- STYLES -->
+  <!-- STYLES -->
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <!-- choices -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" /> -->
+
+  <!-- tooltips -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" /> -->
+
+  <!-- simplebar -->
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
+
+  <!-- my-styles -->
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <!-- JavaScript -->
+  <!-- JavaScript -->
+
+  <!-- accordion -->
+  <script defer src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <!-- choices -->
+  <!-- <script defer src="js/choices.min.js"></script> -->
+
+  <!-- swiper -->
+  <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- simplebar -->
+  <script defer src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+
+  <!-- GSAP -->
+  <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script> -->
+
+  <!-- tooltips -->
+  <!-- <script defer src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script> -->
+  <!-- <script defer src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script> -->
+
+  <!-- jQuery -->
+  <!-- <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
+
+  <!-- my JS -->
+
+  <script defer src="js/myModals.js"></script>
+  <script defer src="js/cart.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+
+
+
+<body>
+  <header class="header">
+  <div class="container header__container">
+
+
+    <div class="header__content content">
+
+      <div class="content__left left">
+        <a class="left__logo-link" href="#">
+          <img class="logo-image" src="img/LE-logo.webp" alt="Логотип компании">
+        </a>
+      </div>
+
+      <nav class="content__mid mid">
+        <ul class="mid__list list-reset">
+          <li class="mid__list-item">
+            <a class="mid__list-item-link" href="#">
+              Отзывы
+            </a>
+          </li>
+          <li class="mid__list-item">
+            <a class="mid__list-item-link" href="#">
+              Контакты
+            </a>
+          </li>
+          <!-- <li class="mid__list-item">
+						<a class="mid__list-item-link" href="#">
+							Доставка
+						</a>
+					</li> -->
+          <li class="mid__list-item">
+            <a class="mid__list-item-link" href="#faq">
+              FAQ
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="content__cart cart" tabindex="0">
+        <div class="cart__descr">
+          <svg class="cart__img" width="30" height="30">
+            <use xlink:href="img/sprite.svg#shopping-cart"></use>
+          </svg>
+          <span class="cart__quantity">0</span>
+        </div>
+        <div class="cart__filling filling">
+
+          <ul class="filling__list list-reset" data-simplebar>
+
+            <!-- <li class="filling__list-item">
+              <article class="filling__product product">
+                <img class="product__img" src="img/1.webp" alt="Картинка товара">
+                <div class="product__text">
+                  <h3 class="product__title">
+                    Name Name Name
+                  </h3>
+                  <span class="product__price">
+                    995 ₽
+                  </span>
+                </div>
+                <button class="product__delete my-btn" aria-label="Удалить товар">
+                  <svg class="trash" width="30" height="30">
+                    <use xlink:href="img/sprite.svg#trash"></use>
+                  </svg>
+                </button>
+              </article>
+            </li> -->
+
+          </ul>
+
+          <div class="filling__bottom">
+            <div class="filling__fullprice">
+              <span>Итого:</span>
+              <span class="fullprice">
+                999 999 ₽
+              </span>
+            </div>
+            <button class="filling__btn my-btn">Перейти в корзину</button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</header>
+  <main>
+
+    <section class="hero" id="hero">
+      <div class="container hero__container">
+
+        <!-- Slider main container -->
+        <div class="hero__swiper swiper">
+          <!-- Additional required wrapper -->
+          <ul class="hero__swiper-wrapper swiper-wrapper list-reset">
+            <!-- Slides -->
+            <li class="hero__swiper-slide swiper-slide">
+              <div class="swiper-slide__wrap wrap">
+                <h1 class="wrap__title">
+                  Основной заголовок <br> страницы <br> (что вы хотите донести)
+                </h1>
+
+                <div class="wrap__descr">
+                  Тут может быть какой-то текст
+                </div>
+
+                <a class="wrap__btn my-btn" href="#products">К товарам</a>
+              </div>
+            </li>
+            <li class="hero__swiper-slide swiper-slide">
+              <div class="swiper-slide__wrap wrap">
+                SLIDE2
+              </div>
+            </li>
+            <li class="hero__swiper-slide swiper-slide">
+              <div class="swiper-slide__wrap wrap">
+                SLIDE3
+              </div>
+            </li>
+          </ul>
+          <!-- If we need pagination -->
+          <div class="hero__swiper-pagination swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="hero__swiper-button-prev swiper-button-prev">
+            <svg class="" width="24" height="24">
+              <use xlink:href="img/sprite.svg#arrow-left"></use>
+            </svg>
+          </div>
+          <div class="hero__swiper-button-next swiper-button-next">
+            <svg class="" width="24" height="24">
+              <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="container faq__container">
+
+        <h2 class="faq__title h2-title">
+          Часто задаваемые вопросы
+        </h2>
+
+        <div class="faq__content">
+
+          <div class="faq__img">
+
+            <svg class="" width="400" height="380">
+              <use xlink:href="img/sprite.svg#illustration"></use>
+            </svg>
+
+
+          </div>
+
+          <div class="faq__accordion-wrapper accordion">
+
+            <ul class="accordion__list list-reset one">
+
+              <li class="accordion__list-item">
+                <div class="accordion__wrap" tabindex="0">
+                  <h3 class="accordion__title">
+                    Вопрос 1
+                  </h3>
+                  <span class="accordion__span"></span>
+                </div>
+                <div class="accordion__text">
+                  <div class="accordion__content">
+
+                    <div class="accordion__descr descr">
+                      Тут будет ответ на вопрос
+                    </div>
+
+                  </div>
+                </div>
+              </li>
+
+              <li class="accordion__list-item">
+                <div class="accordion__wrap" tabindex="0">
+                  <!--  active - если нужен один открытый -->
+                  <h3 class="accordion__title">
+                    Вопрос 2
+                  </h3>
+                  <span class="accordion__span"></span>
+                </div>
+                <div class="accordion__text">
+                  <!--  style = "display: block;" - если нужен один открытый -->
+                  <div class="accordion__content">
+
+                    <div class="accordion__descr descr">
+                      Тут будет ответ на вопрос
+                    </div>
+
+                  </div>
+                </div>
+              </li>
+
+              <li class="accordion__list-item">
+                <div class="accordion__wrap" tabindex="0">
+                  <h3 class="accordion__title">
+                    Вопрос 3
+                  </h3>
+                  <span class="accordion__span"></span>
+                </div>
+                <div class="accordion__text">
+                  <div class="accordion__content">
+
+                    <div class="accordion__descr descr">
+                      Тут будет ответ на вопрос
+                    </div>
+
+                  </div>
+                </div>
+              </li>
+
+              <li class="accordion__list-item">
+                <div class="accordion__wrap" tabindex="0">
+                  <h3 class="accordion__title">
+                    Вопрос 4
+                  </h3>
+                  <span class="accordion__span"></span>
+                </div>
+                <div class="accordion__text">
+                  <div class="accordion__content">
+
+                    <div class="accordion__descr descr">
+                      Тут будет ответ на вопрос
+                    </div>
+
+                  </div>
+                </div>
+              </li>
+
+              <li class="accordion__list-item">
+                <div class="accordion__wrap" tabindex="0">
+                  <h3 class="accordion__title">
+                    Вопрос 5
+                  </h3>
+                  <span class="accordion__span"></span>
+                </div>
+                <div class="accordion__text">
+                  <div class="accordion__content">
+
+                    <div class="accordion__descr descr">
+                      Тут будет ответ на вопрос
+                    </div>
+
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <div class="container products__container">
+
+        <h2 class="products__title h2-title">
+          Популярные товары
+        </h2>
+
+        <ul class="products__list products-grid list-reset">
+
+          <li class="products-grid__item list-item">
+            <article class="product">
+              <button class="product__switch-img my-btn modal-btn" data-path="modal-1">
+                <div class="image-swich">
+                  <div class="product__img">
+                    <img src="img/1.webp" alt="Картинка товара">
+                  </div>
+                  <div class="product__img">
+                    <img src="img/2.webp" alt="Картинка товара">
+                  </div>
+                </div>
+              </button>
+
+              <div class="product__name">
+                Name Name Name
+              </div>
+
+              <div class="product__price">
+                995 ₽
+              </div>
+
+              <button class="product__btn my-btn black-btn">
+                В корзину
+              </button>
+
+            </article>
+          </li>
+
+          <li class="products-grid__item list-item">
+            <article class="product">
+              <button class="product__switch-img my-btn modal-btn" data-path="modal-2">
+                <div class="image-swich">
+                  <div class="product__img">
+                    <img src="img/1.webp" alt="Картинка товара">
+                  </div>
+                  <div class="product__img">
+                    <img src="img/2.webp" alt="Картинка товара">
+                  </div>
+                </div>
+              </button>
+
+              <div class="product__name">
+                Name Name Name
+              </div>
+
+              <div class="product__price">
+                995 ₽
+              </div>
+
+              <button class="product__btn my-btn black-btn">
+                В корзину
+              </button>
+
+            </article>
+          </li>
+
+          <li class="products-grid__item list-item">
+            <article class="product">
+              <button class="product__switch-img my-btn modal-btn" data-path="modal-3">
+                <div class="image-swich">
+                  <div class="product__img">
+                    <img src="img/1.webp" alt="Картинка товара">
+                  </div>
+                  <div class="product__img">
+                    <img src="img/2.webp" alt="Картинка товара">
+                  </div>
+                </div>
+              </button>
+
+              <div class="product__name">
+                Name Name Name
+              </div>
+
+              <div class="product__price">
+                995 ₽
+              </div>
+
+              <button class="product__btn my-btn black-btn">
+                В корзину
+              </button>
+
+            </article>
+          </li>
+
+          <li class="products-grid__item list-item">
+            <article class="product">
+              <button class="product__switch-img my-btn modal-btn" data-path="modal-4">
+                <div class="image-swich">
+                  <div class="product__img">
+                    <img src="img/1.webp" alt="Картинка товара">
+                  </div>
+                  <div class="product__img">
+                    <img src="img/2.webp" alt="Картинка товара">
+                  </div>
+                </div>
+              </button>
+
+              <div class="product__name">
+                Name Name Name Name Name Name Name Name NameName Name Name Name Name Name Name Name Name
+              </div>
+
+              <div class="product__price">
+                995 ₽
+              </div>
+
+              <button class="product__btn my-btn black-btn">
+                В корзину
+              </button>
+
+            </article>
+          </li>
+
+
+          <!-- <li class="products__list-item list-item">
+            <article class="list-item__wrap wrap">
+              <button class="wrap__switch-img my-btn modal-btn" data-path="modal-1">
+                <div class="image-swich">
+                  <div class="wrap__img">
+                    <img src="img/1.webp" alt="Картинка товара">
+                  </div>
+                  <div class="wrap__img">
+                    <img src="img/2.webp" alt="Картинка товара">
+                  </div>
+                </div>
+              </button>
+
+
+              <div class="descr">
+                <div class="descr__name">
+                  Name Name Name Name Name Name Name Name Name Name Name Name
+                </div>
+                <div class="descr__price">
+                  995 ₽
+                </div>
+                <button class="descr__btn my-btn black-btn" type="button">
+                  В корзину
+                </button>
+              </div>
+
+            </article>
+          </li> -->
+
+
+        </ul>
+
+        <button class="products__btn my-btn" type="button">
+          Показать ещё
+        </button>
+
+      </div>
+    </section>
+
+    <!-- <section class="delivery" id="delivery">
+      <div class="container delivery__container">
+
+        <h2 class="delivery__title h2-title">
+          Доставка
+        </h2>
+
+      </div>
+    </section> -->
+
+  </main>
+  <footer class="footer">
+	<div class="container footer__container">
+
+
+	</div>
+</footer>
+
+  <div class="modals">
+	<div class="modal-overlay">
+
+		<!-- Вход -->
+		<div class="modal modal--1" data-target="modal-1">
+			<div class="modal-wrap">
+				<div class="modal-content content">
+
+					<div class="content__img">
+						<img src="img/1.webp" alt="Картинка товара">
+						<img src="img/2.webp" alt="Картинка товара">
+					</div>
+
+					<div class="content__name">
+						Name Name Name Name Name
+					</div>
+
+					<div class="content__descr">
+						Тут может быть какое-то описание товара
+					</div>
+
+					<div class="content__digit">
+
+						<span class="price">995 ₽</span>
+						<span class="weight">0.15 кг</span>
+
+					</div>
+
+				</div>
+			</div>
+			<button class="close-modal-btn my-btn">
+				<span></span>
+			</button>
+		</div>
+
+
+		<!-- Модалка с диванами -->
+		<div class="modal modal--2" data-target="modal-two">
+			<div class="modal-wrap">
+
+				<div class="modal-content">
+					1
+				</div>
+
+
+			</div>
+			<button class="close-modal-btn my-btn">
+				<span></span>
+			</button>
+		</div>
+
+		<!-- Модалка спасибо за покупку -->
+		<div class="modal modal--3" data-target="modal-thanks">
+			<div class="modal-content">
+				3
+			</div>
+			<button class="close-modal-btn my-btn" type="button">
+				<span></span>
+			</button>
+		</div>
+
+	</div>
+</div>
+</body>
+
+</html>
