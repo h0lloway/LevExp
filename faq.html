@@ -1,0 +1,215 @@
+<!-- <!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leverans Express</title>
+  
+  <link rel="shortcut icon" href="img/favicon.png">
+
+
+  <!-- fonts -->
+  <!-- fonts -->
+
+  <link rel="prefetch" href="fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="prefetch" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="prefetch" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  <!-- STYLES -->
+  <!-- STYLES -->
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <!-- choices -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" /> -->
+
+  <!-- tooltips -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" /> -->
+
+  <!-- simplebar -->
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
+
+  <!-- my-styles -->
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <!-- JavaScript -->
+  <!-- JavaScript -->
+
+  <!-- accordion -->
+  <script defer src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <!-- choices -->
+  <!-- <script defer src="js/choices.min.js"></script> -->
+
+  <!-- swiper -->
+  <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- simplebar -->
+  <script defer src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+
+  <!-- GSAP -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+
+  <!-- tooltips -->
+  <!-- <script defer src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script> -->
+  <!-- <script defer src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script> -->
+
+  <!-- jQuery -->
+  <!-- <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
+
+  <!-- my JS -->
+
+  <script defer src="js/myModals.js"></script>
+  <script defer src="js/cart.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+
+
+
+<body>
+  <header class="header">
+  <div class="container header__container">
+
+
+    <div class="header__content content">
+
+      <div class="content__left left">
+        <a class="left__logo-link" href="#">
+          <img class="logo-image" src="img/LE-logo.webp" alt="Логотип компании">
+        </a>
+      </div>
+
+
+      <div class="content__right right">
+
+        <nav class="content__nav nav">
+
+          <button class="nav__burger my-btn" aria-label="Открытие меню">
+            <span></span>
+          </button>
+
+          <ul class="nav__list list-reset">
+            <li class="nav__list-item">
+              <a class="nav__list-item-link" href="#reviews">
+                Отзывы
+              </a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__list-item-link" href="#contacts">
+                Контакты
+              </a>
+            </li>
+            <!-- <li class="nav__list-item">
+              <a class="nav__list-item-link" href="#">
+                Доставка
+              </a>
+            </li> -->
+            <li class="nav__list-item">
+              <a class="nav__list-item-link" href="#faq">
+                FAQ
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+
+
+        <div class="content__cart cart" tabindex="0">
+          <div class="cart__descr">
+            <svg class="cart__img" width="30" height="30">
+              <use xlink:href="img/sprite.svg#shopping-cart"></use>
+            </svg>
+            <span class="cart__quantity">0</span>
+          </div>
+          <div class="cart__filling filling">
+
+            <ul class="filling__list list-reset" data-simplebar>
+
+              <!-- <li class="filling__list-item">
+                <article class="filling__product cart-product">
+                  <img class="product__img" src="img/1.webp" alt="Картинка товара">
+                  <div class="product__text">
+                    <h3 class="product__title">
+                      Name Name Name
+                    </h3>
+                    <span class="product__price">
+                      995 ₽
+                    </span>
+                  </div>
+                  <button class="product__delete my-btn" aria-label="Удалить товар">
+                    <svg class="trash" width="30" height="30">
+                      <use xlink:href="img/sprite.svg#trash"></use>
+                    </svg>
+                  </button>
+                </article>
+              </li> -->
+
+              <li class="filling__list-item" style="display: none;">
+
+              </li>
+
+            </ul>
+
+            <div class="filling__bottom">
+              <div class="filling__fullprice">
+                <span>Итого:</span>
+                <span class="fullprice">
+                  999 999 ₽
+                </span>
+              </div>
+              <button class="filling__btn my-btn">Заказать</button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+</header>
+  <main>
+
+    <section class="faq-main">
+      <div class="container faq-main__container">
+        Привет
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+  <div class="container footer__container">
+
+    <div class="footer__content content">
+
+      <div class="content__left left">
+        <img src="img/LE-logo-footer.webp" alt="Логотип компании">
+      </div>
+
+      <div class="content__mid mid">
+        Copyright ©2022 All rights reserved
+      </div>
+
+      <div class="content__right right">
+        design and production by <br> <a href="https://h0lloway.github.io/my-portfolio/" target="_blank"
+          style="font-weight: 600; color: #5f9f9c;">
+          Dubrovin Maksim
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</footer> -->
+
+  
+<!-- </body>
+
+</html> -->

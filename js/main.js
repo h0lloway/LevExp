@@ -34,12 +34,12 @@ $('a[href*="#"]').on('click', function () {
 
 // BURGER
 
-// $(document).ready(function () {
-//   $('.btns__burger').click(function (event) {
-//     $('.btns__burger,.nav__list').toggleClass('active');
-//     $('body').toggleClass('lock');
-//   });
-// });
+$(document).ready(function () {
+  $('.nav__burger').click(function (event) {
+    $('.nav__burger,.nav__list').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+});
 
 // accordion // accordion // accordion // accordion 
 
@@ -79,10 +79,10 @@ const heroSwiper = new Swiper('.hero__swiper', {
   loop: true,
   spaceBetween: 30,
   speed: 800,
-  autoplay: {
-    delay: 4500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 4500,
+  //   disableOnInteraction: false,
+  // },
 
   // If we need pagination
   pagination: {
@@ -97,42 +97,6 @@ const heroSwiper = new Swiper('.hero__swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
-
-
-
-// const reviewsSwiper = new Swiper('.reviews__swiper', {
-//   // Optional parameters
-//   slidesPerView: 3,
-//   slidesPerGroup: 1,
-//   spaceBetween: 20,
-//   // loop: true,
-//   breakpoints: {
-//     210: {
-//       slidesPerGroup: 1,
-//       slidesPerView: 1,
-//     },
-//     720: {
-//       slidesPerGroup: 1,
-//       slidesPerView: 2,
-//     },
-//     1200: {
-//       slidesPerGroup: 1,
-//       slidesPerView: 3,
-//     }
-//   },
-
-//   // If we need pagination
-//   pagination: {
-//     el: '.reviews__swiper-pagination',
-//   },
-
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: '.reviews__swiper-button-next',
-//     prevEl: '.reviews__swiper-button-prev',
-//   },
-// });
-
 
 
 // SWICH THEME
@@ -194,9 +158,9 @@ const heroSwiper = new Swiper('.hero__swiper', {
 // });
 
 
+// РАСКРЫТЬ КАРТОЧКИ // РАСКРЫТЬ КАРТОЧКИ // РАСКРЫТЬ КАРТОЧКИ // РАСКРЫТЬ КАРТОЧКИ
 
-
-// РАСКРЫТЬ КАРТОЧКИ
+// старый способ (рабочий, нужен сласс "hidden")
 
 // const hifgRatingItems = gsap.timeline({ paused: true })
 
@@ -214,4 +178,21 @@ const heroSwiper = new Swiper('.hero__swiper', {
 //   hifgRatingItems.timeScale(2).reverse()
 // })
 
+// Способ получше
+const showMore = document.querySelector('.more-item-btn');
+const productsLength = document.querySelectorAll('.products-grid__item').length;
+let items = 12;
+
+showMore.addEventListener('click', () => {
+  items += 4
+  const array = Array.from(document.querySelector('.products-grid').children);
+  const visItems = array.slice(0, items);
+
+  visItems.forEach(el => el.classList.add('is-visible'));
+
+
+  if (visItems.length === productsLength) {
+    showMore.style.display = 'none';
+  }
+});
 

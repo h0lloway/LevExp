@@ -6,15 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Leverans Express</title>
-  <link rel="icon" href="favicon.ico">
+  
+  <link rel="shortcut icon" href="img/favicon.png">
 
 
   <!-- fonts -->
   <!-- fonts -->
 
-  <!-- <link rel="prefetch" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin> -->
-  <!-- <link rel="prefetch" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin> -->
-  <!-- <link rel="prefetch" href="fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link rel="prefetch" href="fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="prefetch" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="prefetch" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
 
 
   <!-- STYLES -->
@@ -51,7 +52,7 @@
   <script defer src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 
   <!-- GSAP -->
-  <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script> -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
 
   <!-- tooltips -->
   <!-- <script defer src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script> -->
@@ -83,74 +84,90 @@
         </a>
       </div>
 
-      <nav class="content__mid mid">
-        <ul class="mid__list list-reset">
-          <li class="mid__list-item">
-            <a class="mid__list-item-link" href="#">
-              Отзывы
-            </a>
-          </li>
-          <li class="mid__list-item">
-            <a class="mid__list-item-link" href="#">
-              Контакты
-            </a>
-          </li>
-          <!-- <li class="mid__list-item">
-						<a class="mid__list-item-link" href="#">
-							Доставка
-						</a>
-					</li> -->
-          <li class="mid__list-item">
-            <a class="mid__list-item-link" href="#faq">
-              FAQ
-            </a>
-          </li>
-        </ul>
-      </nav>
 
-      <div class="content__cart cart" tabindex="0">
-        <div class="cart__descr">
-          <svg class="cart__img" width="30" height="30">
-            <use xlink:href="img/sprite.svg#shopping-cart"></use>
-          </svg>
-          <span class="cart__quantity">0</span>
-        </div>
-        <div class="cart__filling filling">
+      <div class="content__right right">
 
-          <ul class="filling__list list-reset" data-simplebar>
+        <nav class="content__nav nav">
 
-            <!-- <li class="filling__list-item">
-              <article class="filling__product product">
-                <img class="product__img" src="img/1.webp" alt="Картинка товара">
-                <div class="product__text">
-                  <h3 class="product__title">
-                    Name Name Name
-                  </h3>
-                  <span class="product__price">
-                    995 ₽
-                  </span>
-                </div>
-                <button class="product__delete my-btn" aria-label="Удалить товар">
-                  <svg class="trash" width="30" height="30">
-                    <use xlink:href="img/sprite.svg#trash"></use>
-                  </svg>
-                </button>
-              </article>
+          <button class="nav__burger my-btn" aria-label="Открытие меню">
+            <span></span>
+          </button>
+
+          <ul class="nav__list list-reset">
+            <li class="nav__list-item">
+              <a class="nav__list-item-link" href="#reviews">
+                Отзывы
+              </a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__list-item-link" href="#contacts">
+                Контакты
+              </a>
+            </li>
+            <!-- <li class="nav__list-item">
+              <a class="nav__list-item-link" href="#">
+                Доставка
+              </a>
             </li> -->
-
+            <li class="nav__list-item">
+              <a class="nav__list-item-link" href="#faq">
+                FAQ
+              </a>
+            </li>
           </ul>
+        </nav>
 
-          <div class="filling__bottom">
-            <div class="filling__fullprice">
-              <span>Итого:</span>
-              <span class="fullprice">
-                999 999 ₽
-              </span>
-            </div>
-            <button class="filling__btn my-btn">Перейти в корзину</button>
+
+
+        <div class="content__cart cart" tabindex="0">
+          <div class="cart__descr">
+            <svg class="cart__img" width="30" height="30">
+              <use xlink:href="img/sprite.svg#shopping-cart"></use>
+            </svg>
+            <span class="cart__quantity">0</span>
           </div>
+          <div class="cart__filling filling">
 
+            <ul class="filling__list list-reset" data-simplebar>
+
+              <!-- <li class="filling__list-item">
+                <article class="filling__product cart-product">
+                  <img class="product__img" src="img/1.webp" alt="Картинка товара">
+                  <div class="product__text">
+                    <h3 class="product__title">
+                      Name Name Name
+                    </h3>
+                    <span class="product__price">
+                      995 ₽
+                    </span>
+                  </div>
+                  <button class="product__delete my-btn" aria-label="Удалить товар">
+                    <svg class="trash" width="30" height="30">
+                      <use xlink:href="img/sprite.svg#trash"></use>
+                    </svg>
+                  </button>
+                </article>
+              </li> -->
+
+              <li class="filling__list-item" style="display: none;">
+
+              </li>
+
+            </ul>
+
+            <div class="filling__bottom">
+              <div class="filling__fullprice">
+                <span>Итого:</span>
+                <span class="fullprice">
+                  999 999 ₽
+                </span>
+              </div>
+              <button class="filling__btn my-btn">Заказать</button>
+            </div>
+
+          </div>
         </div>
+
       </div>
 
     </div>
@@ -163,50 +180,714 @@
     <section class="hero" id="hero">
       <div class="container hero__container">
 
-        <!-- Slider main container -->
+
         <div class="hero__swiper swiper">
-          <!-- Additional required wrapper -->
+
           <ul class="hero__swiper-wrapper swiper-wrapper list-reset">
-            <!-- Slides -->
+
             <li class="hero__swiper-slide swiper-slide">
               <div class="swiper-slide__wrap wrap">
-                <h1 class="wrap__title">
-                  Основной заголовок <br> страницы <br> (что вы хотите донести)
-                </h1>
+                <div class="wrap__content">
+                  <h1 class="wrap__title">
+                    Добро пожаловать <br> в коллекцию ВИНТЕРФИНТ
+                  </h1>
 
-                <div class="wrap__descr">
-                  Тут может быть какой-то текст
+                  <div class="wrap__descr">
+                    Эта коллеция поможет вам <br> создать сезонное настроение <br> для всех ваших близких.
+                  </div>
+
+                  <a class="wrap__btn my-btn black-btn" href="#products">К товарам</a>
                 </div>
-
-                <a class="wrap__btn my-btn" href="#products">К товарам</a>
               </div>
             </li>
+
             <li class="hero__swiper-slide swiper-slide">
               <div class="swiper-slide__wrap wrap">
                 SLIDE2
               </div>
             </li>
+
             <li class="hero__swiper-slide swiper-slide">
               <div class="swiper-slide__wrap wrap">
                 SLIDE3
               </div>
             </li>
+
           </ul>
-          <!-- If we need pagination -->
+
           <div class="hero__swiper-pagination swiper-pagination"></div>
 
-          <!-- If we need navigation buttons -->
-          <div class="hero__swiper-button-prev swiper-button-prev">
+
+          <button class="hero__swiper-button-prev swiper-button-prev my-btn">
             <svg class="" width="24" height="24">
               <use xlink:href="img/sprite.svg#arrow-left"></use>
             </svg>
-          </div>
-          <div class="hero__swiper-button-next swiper-button-next">
+          </button>
+
+          <button class="hero__swiper-button-next swiper-button-next my-btn">
             <svg class="" width="24" height="24">
               <use xlink:href="img/sprite.svg#arrow-right"></use>
             </svg>
-          </div>
+          </button>
+
         </div>
+
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <div class="container products__container">
+
+        <h2 class="products__title h2-title">
+          Популярные товары
+        </h2>
+
+        <ul class="products__list products-grid list-reset">
+
+          <!-- #1 -->
+          <li class="products-grid__item list-item">
+            <article class="product">
+              <button class="product__switch-img my-btn modal-btn" data-path="modal-1">
+                <span class="image-swich">
+                  <span class="product__img">
+                    <img src="img/1.webp" alt="Картинка товара">
+                  </span>
+                  <span class="product__img">
+                    <img src="img/2.webp" alt="Картинка товара">
+                  </span>
+                </span>
+              </button>
+
+              <h3 class="product__name">
+                VINTERFINT
+              </h3>
+
+              <div class="product__price">
+                409 ₽
+              </div>
+
+              <button class="product__btn my-btn black-btn">
+                В корзину
+              </button>
+
+            </article>
+          </li>
+
+          <!-- #2 -->
+          <li class="products-grid__item list-item">
+            <article class="product">
+              <button class="product__switch-img my-btn modal-btn" data-path="modal-2">
+                <span class="image-swich">
+                  <span class="product__img">
+                    <img src="img/3.webp" alt="Картинка товара">
+                  </span>
+                  <span class="product__img">
+                    <img src="img/4.webp" alt="Картинка товара">
+                  </span>
+                </span>
+              </button>
+
+              <h3 class="product__name">
+                VINTERFINT
+              </h3>
+
+              <div class="product__price">
+                379 ₽
+              </div>
+
+              <button class="product__btn my-btn black-btn">
+                В корзину
+              </button>
+
+            </article>
+          </li>
+
+          <!-- #3 -->
+          <li class="products-grid__item list-item">
+            <article class="product">
+              <button class="product__switch-img my-btn modal-btn" data-path="modal-3">
+                <span class="image-swich">
+                  <span class="product__img">
+                    <img src="img/5.webp" alt="Картинка товара">
+                  </span>
+                  <span class="product__img">
+                    <img src="img/6.webp" alt="Картинка товара">
+                  </span>
+                </span>
+              </button>
+
+              <h3 class="product__name">
+                VINTERFINT
+              </h3>
+
+              <div class="product__price">
+                1229 ₽
+              </div>
+
+              <button class="product__btn my-btn black-btn">
+                В корзину
+              </button>
+
+            </article>
+          </li>
+
+          <!-- #4 -->
+          <li class="products-grid__item list-item">
+            <article class="product">
+              <button class="product__switch-img my-btn modal-btn" data-path="modal-4">
+                <span class="image-swich">
+                  <span class="product__img">
+                    <img src="img/7.webp" alt="Картинка товара">
+                  </span>
+                  <span class="product__img">
+                    <img src="img/8.webp" alt="Картинка товара">
+                  </span>
+                </span>
+              </button>
+
+              <h3 class="product__name">
+                VINTERFINT
+              </h3>
+
+              <div class="product__price">
+                1509 ₽
+              </div>
+
+              <button class="product__btn my-btn black-btn">
+                В корзину
+              </button>
+
+            </article>
+          </li>
+
+          <!-- #5 -->
+          <li class="products-grid__item list-item">
+            <article class="product">
+              <button class="product__switch-img my-btn modal-btn" data-path="modal-1">
+                <span class="image-swich">
+                  <span class="product__img">
+                    <img src="img/1.webp" alt="Картинка товара">
+                  </span>
+                  <span class="product__img">
+                    <img src="img/2.webp" alt="Картинка товара">
+                  </span>
+                </span>
+              </button>
+
+              <h3 class="product__name">
+                VINTERFINT
+              </h3>
+
+              <div class="product__price">
+                759 ₽
+              </div>
+
+              <button class="product__btn my-btn black-btn">
+                В корзину
+              </button>
+
+            </article>
+          </li>
+
+          <!-- #6 -->
+          <li class="products-grid__item list-item">
+            <article class="product">
+              <button class="product__switch-img my-btn modal-btn" data-path="modal-2">
+                <span class="image-swich">
+                  <span class="product__img">
+                    <img src="img/3.webp" alt="Картинка товара">
+                  </span>
+                  <span class="product__img">
+                    <img src="img/4.webp" alt="Картинка товара">
+                  </span>
+                </span>
+              </button>
+
+              <h3 class="product__name">
+                VINTERFINT
+              </h3>
+
+              <div class="product__price">
+                995 ₽
+              </div>
+
+              <button class="product__btn my-btn black-btn">
+                В корзину
+              </button>
+
+            </article>
+          </li>
+
+          <!-- #7 -->
+          <li class="products-grid__item list-item">
+            <article class="product">
+              <button class="product__switch-img my-btn modal-btn" data-path="modal-3">
+                <span class="image-swich">
+                  <span class="product__img">
+                    <img src="img/5.webp" alt="Картинка товара">
+                  </span>
+                  <span class="product__img">
+                    <img src="img/6.webp" alt="Картинка товара">
+                  </span>
+                </span>
+              </button>
+
+              <h3 class="product__name">
+                VINTERFINT
+              </h3>
+
+              <div class="product__price">
+                995 ₽
+              </div>
+
+              <button class="product__btn my-btn black-btn">
+                В корзину
+              </button>
+
+            </article>
+          </li>
+
+          <!-- #8 -->
+          <li class="products-grid__item list-item">
+            <article class="product">
+              <button class="product__switch-img my-btn modal-btn" data-path="modal-4">
+                <span class="image-swich">
+                  <span class="product__img">
+                    <img src="img/7.webp" alt="Картинка товара">
+                  </span>
+                  <span class="product__img">
+                    <img src="img/8.webp" alt="Картинка товара">
+                  </span>
+                </span>
+              </button>
+
+              <h3 class="product__name">
+                VINTERFINT
+              </h3>
+
+              <div class="product__price">
+                995 ₽
+              </div>
+
+              <button class="product__btn my-btn black-btn">
+                В корзину
+              </button>
+
+            </article>
+          </li>
+
+          <!-- #9 -->
+          <li class="products-grid__item list-item">
+            <article class="product">
+              <button class="product__switch-img my-btn modal-btn" data-path="modal-1">
+                <span class="image-swich">
+                  <span class="product__img">
+                    <img src="img/1.webp" alt="Картинка товара">
+                  </span>
+                  <span class="product__img">
+                    <img src="img/2.webp" alt="Картинка товара">
+                  </span>
+                </span>
+              </button>
+
+              <h3 class="product__name">
+                VINTERFINT
+              </h3>
+
+              <div class="product__price">
+                995 ₽
+              </div>
+
+              <button class="product__btn my-btn black-btn">
+                В корзину
+              </button>
+
+            </article>
+          </li>
+
+          <!-- #10 -->
+          <li class="products-grid__item list-item">
+            <article class="product">
+              <button class="product__switch-img my-btn modal-btn" data-path="modal-2">
+                <span class="image-swich">
+                  <span class="product__img">
+                    <img src="img/3.webp" alt="Картинка товара">
+                  </span>
+                  <span class="product__img">
+                    <img src="img/4.webp" alt="Картинка товара">
+                  </span>
+                </span>
+              </button>
+
+              <h3 class="product__name">
+                VINTERFINT
+              </h3>
+
+              <div class="product__price">
+                995 ₽
+              </div>
+
+              <button class="product__btn my-btn black-btn">
+                В корзину
+              </button>
+
+            </article>
+          </li>
+
+          <!-- #11 -->
+          <li class="products-grid__item list-item">
+            <article class="product">
+              <button class="product__switch-img my-btn modal-btn" data-path="modal-3">
+                <span class="image-swich">
+                  <span class="product__img">
+                    <img src="img/5.webp" alt="Картинка товара">
+                  </span>
+                  <span class="product__img">
+                    <img src="img/6.webp" alt="Картинка товара">
+                  </span>
+                </span>
+              </button>
+
+              <h3 class="product__name">
+                VINTERFINT
+              </h3>
+
+              <div class="product__price">
+                995 ₽
+              </div>
+
+              <button class="product__btn my-btn black-btn">
+                В корзину
+              </button>
+
+            </article>
+          </li>
+
+          <!-- #12 -->
+          <li class="products-grid__item list-item">
+            <article class="product">
+              <button class="product__switch-img my-btn modal-btn" data-path="modal-4">
+                <span class="image-swich">
+                  <span class="product__img">
+                    <img src="img/7.webp" alt="Картинка товара">
+                  </span>
+                  <span class="product__img">
+                    <img src="img/8.webp" alt="Картинка товара">
+                  </span>
+                </span>
+              </button>
+
+              <h3 class="product__name">
+                VINTERFINT
+              </h3>
+
+              <div class="product__price">
+                995 ₽
+              </div>
+
+              <button class="product__btn my-btn black-btn">
+                В корзину
+              </button>
+
+            </article>
+          </li>
+
+          <!-- #13 -->
+          <li class="products-grid__item list-item">
+            <article class="product">
+              <button class="product__switch-img my-btn modal-btn" data-path="modal-1">
+                <span class="image-swich">
+                  <span class="product__img">
+                    <img src="img/1.webp" alt="Картинка товара">
+                  </span>
+                  <span class="product__img">
+                    <img src="img/2.webp" alt="Картинка товара">
+                  </span>
+                </span>
+              </button>
+
+              <h3 class="product__name">
+                VINTERFINT
+              </h3>
+
+              <div class="product__price">
+                995 ₽
+              </div>
+
+              <button class="product__btn my-btn black-btn">
+                В корзину
+              </button>
+
+            </article>
+          </li>
+
+          <!-- #14 -->
+          <li class="products-grid__item list-item">
+            <article class="product">
+              <button class="product__switch-img my-btn modal-btn" data-path="modal-2">
+                <span class="image-swich">
+                  <span class="product__img">
+                    <img src="img/3.webp" alt="Картинка товара">
+                  </span>
+                  <span class="product__img">
+                    <img src="img/4.webp" alt="Картинка товара">
+                  </span>
+                </span>
+              </button>
+
+              <h3 class="product__name">
+                VINTERFINT
+              </h3>
+
+              <div class="product__price">
+                995 ₽
+              </div>
+
+              <button class="product__btn my-btn black-btn">
+                В корзину
+              </button>
+
+            </article>
+          </li>
+
+          <!-- #15 -->
+          <li class="products-grid__item list-item">
+            <article class="product">
+              <button class="product__switch-img my-btn modal-btn" data-path="modal-3">
+                <span class="image-swich">
+                  <span class="product__img">
+                    <img src="img/5.webp" alt="Картинка товара">
+                  </span>
+                  <span class="product__img">
+                    <img src="img/6.webp" alt="Картинка товара">
+                  </span>
+                </span>
+              </button>
+
+              <h3 class="product__name">
+                VINTERFINT
+              </h3>
+
+              <div class="product__price">
+                995 ₽
+              </div>
+
+              <button class="product__btn my-btn black-btn">
+                В корзину
+              </button>
+
+            </article>
+          </li>
+
+          <!-- #16 -->
+          <li class="products-grid__item list-item">
+            <article class="product">
+              <button class="product__switch-img my-btn modal-btn" data-path="modal-4">
+                <span class="image-swich">
+                  <span class="product__img">
+                    <img src="img/7.webp" alt="Картинка товара">
+                  </span>
+                  <span class="product__img">
+                    <img src="img/8.webp" alt="Картинка товара">
+                  </span>
+                </span>
+              </button>
+
+              <h3 class="product__name">
+                VINTERFINT
+              </h3>
+
+              <div class="product__price">
+                995 ₽
+              </div>
+
+              <button class="product__btn my-btn black-btn">
+                В корзину
+              </button>
+
+            </article>
+          </li>
+
+          <!-- #17 -->
+          <li class="products-grid__item list-item">
+            <article class="product">
+              <button class="product__switch-img my-btn modal-btn" data-path="modal-1">
+                <span class="image-swich">
+                  <span class="product__img">
+                    <img src="img/1.webp" alt="Картинка товара">
+                  </span>
+                  <span class="product__img">
+                    <img src="img/2.webp" alt="Картинка товара">
+                  </span>
+                </span>
+              </button>
+
+              <h3 class="product__name">
+                VINTERFINT
+              </h3>
+
+              <div class="product__price">
+                995 ₽
+              </div>
+
+              <button class="product__btn my-btn black-btn">
+                В корзину
+              </button>
+
+            </article>
+          </li>
+
+          <!-- #18 -->
+          <li class="products-grid__item list-item">
+            <article class="product">
+              <button class="product__switch-img my-btn modal-btn" data-path="modal-2">
+                <span class="image-swich">
+                  <span class="product__img">
+                    <img src="img/3.webp" alt="Картинка товара">
+                  </span>
+                  <span class="product__img">
+                    <img src="img/4.webp" alt="Картинка товара">
+                  </span>
+                </span>
+              </button>
+
+              <h3 class="product__name">
+                VINTERFINT
+              </h3>
+
+              <div class="product__price">
+                995 ₽
+              </div>
+
+              <button class="product__btn my-btn black-btn">
+                В корзину
+              </button>
+
+            </article>
+          </li>
+
+          <!-- #19 -->
+          <li class="products-grid__item list-item">
+            <article class="product">
+              <button class="product__switch-img my-btn modal-btn" data-path="modal-3">
+                <span class="image-swich">
+                  <span class="product__img">
+                    <img src="img/5.webp" alt="Картинка товара">
+                  </span>
+                  <span class="product__img">
+                    <img src="img/6.webp" alt="Картинка товара">
+                  </span>
+                </span>
+              </button>
+
+              <h3 class="product__name">
+                VINTERFINT
+              </h3>
+
+              <div class="product__price">
+                995 ₽
+              </div>
+
+              <button class="product__btn my-btn black-btn">
+                В корзину
+              </button>
+
+            </article>
+          </li>
+
+          <!-- #20 -->
+          <li class="products-grid__item list-item">
+            <article class="product">
+              <button class="product__switch-img my-btn modal-btn" data-path="modal-4">
+                <span class="image-swich">
+                  <span class="product__img">
+                    <img src="img/7.webp" alt="Картинка товара">
+                  </span>
+                  <span class="product__img">
+                    <img src="img/8.webp" alt="Картинка товара">
+                  </span>
+                </span>
+              </button>
+
+              <h3 class="product__name">
+                VINTERFINT
+              </h3>
+
+              <div class="product__price">
+                995 ₽
+              </div>
+
+              <button class="product__btn my-btn black-btn">
+                В корзину
+              </button>
+
+            </article>
+          </li>
+
+          <!-- #21 -->
+          <li class="products-grid__item list-item">
+            <article class="product">
+              <button class="product__switch-img my-btn modal-btn" data-path="modal-3">
+                <span class="image-swich">
+                  <span class="product__img">
+                    <img src="img/5.webp" alt="Картинка товара">
+                  </span>
+                  <span class="product__img">
+                    <img src="img/6.webp" alt="Картинка товара">
+                  </span>
+                </span>
+              </button>
+
+              <h3 class="product__name">
+                VINTERFINT
+              </h3>
+
+              <div class="product__price">
+                995 ₽
+              </div>
+
+              <button class="product__btn my-btn black-btn">
+                В корзину
+              </button>
+
+            </article>
+          </li>
+
+          <!-- #22 -->
+          <li class="products-grid__item list-item">
+            <article class="product">
+              <button class="product__switch-img my-btn modal-btn" data-path="modal-4">
+                <span class="image-swich">
+                  <span class="product__img">
+                    <img src="img/7.webp" alt="Картинка товара">
+                  </span>
+                  <span class="product__img">
+                    <img src="img/8.webp" alt="Картинка товара">
+                  </span>
+                </span>
+              </button>
+
+              <h3 class="product__name">
+                VINTERFINT
+              </h3>
+
+              <div class="product__price">
+                995 ₽
+              </div>
+
+              <button class="product__btn my-btn black-btn">
+                В корзину
+              </button>
+
+            </article>
+          </li>
+
+
+        </ul>
+
+        <button class="products__btn my-btn black-btn more-item-btn">
+          Показать ещё
+        </button>
 
       </div>
     </section>
@@ -236,15 +917,17 @@
               <li class="accordion__list-item">
                 <div class="accordion__wrap" tabindex="0">
                   <h3 class="accordion__title">
-                    Вопрос 1
+                    Можно заказать какой-то товар IKEA, которого нет на&nbsp;сайте leveransexpress.ru?
                   </h3>
-                  <span class="accordion__span"></span>
+                  <span class="accordion__span first"></span>
                 </div>
                 <div class="accordion__text">
                   <div class="accordion__content">
 
                     <div class="accordion__descr descr">
-                      Тут будет ответ на вопрос
+                      Если вас интересует какой-то определенный товар, и&nbsp;вы&nbsp;не&nbsp;нашли его среди тех
+                      артикулов которые мы&nbsp;предлагаем вам приобрести на&nbsp;нашем сайте. Вы&nbsp;можете связаться
+                      с&nbsp;нами через электронную почту, и&nbsp;мы&nbsp;его оформим.
                     </div>
 
                   </div>
@@ -255,7 +938,7 @@
                 <div class="accordion__wrap" tabindex="0">
                   <!--  active - если нужен один открытый -->
                   <h3 class="accordion__title">
-                    Вопрос 2
+                    Есть доставка кроме Москвы в&nbsp;другие города России?
                   </h3>
                   <span class="accordion__span"></span>
                 </div>
@@ -264,7 +947,10 @@
                   <div class="accordion__content">
 
                     <div class="accordion__descr descr">
-                      Тут будет ответ на вопрос
+                      При оформлении заказа вы&nbsp;вносите свои данные и&nbsp;выбираете вариант получения вашего
+                      заказа. Если вы&nbsp;живете не&nbsp;в&nbsp;Москве, мы&nbsp;просчитаем доставку до&nbsp;вашего
+                      населенного пункта, и&nbsp;проинформируем вас&nbsp;&mdash; о&nbsp;стоимости и&nbsp;времени
+                      доставки.
                     </div>
 
                   </div>
@@ -274,7 +960,7 @@
               <li class="accordion__list-item">
                 <div class="accordion__wrap" tabindex="0">
                   <h3 class="accordion__title">
-                    Вопрос 3
+                    Можно делать оптовую закупку?
                   </h3>
                   <span class="accordion__span"></span>
                 </div>
@@ -282,7 +968,7 @@
                   <div class="accordion__content">
 
                     <div class="accordion__descr descr">
-                      Тут будет ответ на вопрос
+                      Такая опция есть, Вы&nbsp;можете связаться нами через электронную почту.
                     </div>
 
                   </div>
@@ -292,7 +978,7 @@
               <li class="accordion__list-item">
                 <div class="accordion__wrap" tabindex="0">
                   <h3 class="accordion__title">
-                    Вопрос 4
+                    Если я&nbsp;оформил заказ, можно совершить обмен или возврат товара?
                   </h3>
                   <span class="accordion__span"></span>
                 </div>
@@ -300,7 +986,7 @@
                   <div class="accordion__content">
 
                     <div class="accordion__descr descr">
-                      Тут будет ответ на вопрос
+                      Товар купленный через сервис Leverans Express обмену и&nbsp;возврату не&nbsp;подлежит.
                     </div>
 
                   </div>
@@ -310,7 +996,7 @@
               <li class="accordion__list-item">
                 <div class="accordion__wrap" tabindex="0">
                   <h3 class="accordion__title">
-                    Вопрос 5
+                    Если я&nbsp;купил товар, распространяется на&nbsp;него какая-то гарантия?
                   </h3>
                   <span class="accordion__span"></span>
                 </div>
@@ -318,7 +1004,9 @@
                   <div class="accordion__content">
 
                     <div class="accordion__descr descr">
-                      Тут будет ответ на вопрос
+                      Мы&nbsp;ответственные за&nbsp;транспортировку купленного товара через сервис Leverans Express
+                      до&nbsp;Вас. В&nbsp;случаи повреждения товара, мы&nbsp;готовы его заменить или вернуть его полную
+                      стоимость.
                     </div>
 
                   </div>
@@ -327,7 +1015,12 @@
 
             </ul>
 
+            <a class="accordion__link" href="faq.html" target="_blank" aria-label="Переход на страницу с FAQ">
+              Все вопросы
+            </a>
+
           </div>
+
 
         </div>
 
@@ -336,163 +1029,16 @@
       </div>
     </section>
 
-    <section class="products" id="products">
-      <div class="container products__container">
+    <section class="reviews" id="reviews">
+      <div class="container reviews__container">
 
-        <h2 class="products__title h2-title">
-          Популярные товары
+        <h2 class="reviews__title h2-title">
+          Отзывы
         </h2>
 
-        <ul class="products__list products-grid list-reset">
+        <div class="reviews__content">
 
-          <li class="products-grid__item list-item">
-            <article class="product">
-              <button class="product__switch-img my-btn modal-btn" data-path="modal-1">
-                <div class="image-swich">
-                  <div class="product__img">
-                    <img src="img/1.webp" alt="Картинка товара">
-                  </div>
-                  <div class="product__img">
-                    <img src="img/2.webp" alt="Картинка товара">
-                  </div>
-                </div>
-              </button>
-
-              <div class="product__name">
-                Name Name Name
-              </div>
-
-              <div class="product__price">
-                995 ₽
-              </div>
-
-              <button class="product__btn my-btn black-btn">
-                В корзину
-              </button>
-
-            </article>
-          </li>
-
-          <li class="products-grid__item list-item">
-            <article class="product">
-              <button class="product__switch-img my-btn modal-btn" data-path="modal-2">
-                <div class="image-swich">
-                  <div class="product__img">
-                    <img src="img/1.webp" alt="Картинка товара">
-                  </div>
-                  <div class="product__img">
-                    <img src="img/2.webp" alt="Картинка товара">
-                  </div>
-                </div>
-              </button>
-
-              <div class="product__name">
-                Name Name Name
-              </div>
-
-              <div class="product__price">
-                995 ₽
-              </div>
-
-              <button class="product__btn my-btn black-btn">
-                В корзину
-              </button>
-
-            </article>
-          </li>
-
-          <li class="products-grid__item list-item">
-            <article class="product">
-              <button class="product__switch-img my-btn modal-btn" data-path="modal-3">
-                <div class="image-swich">
-                  <div class="product__img">
-                    <img src="img/1.webp" alt="Картинка товара">
-                  </div>
-                  <div class="product__img">
-                    <img src="img/2.webp" alt="Картинка товара">
-                  </div>
-                </div>
-              </button>
-
-              <div class="product__name">
-                Name Name Name
-              </div>
-
-              <div class="product__price">
-                995 ₽
-              </div>
-
-              <button class="product__btn my-btn black-btn">
-                В корзину
-              </button>
-
-            </article>
-          </li>
-
-          <li class="products-grid__item list-item">
-            <article class="product">
-              <button class="product__switch-img my-btn modal-btn" data-path="modal-4">
-                <div class="image-swich">
-                  <div class="product__img">
-                    <img src="img/1.webp" alt="Картинка товара">
-                  </div>
-                  <div class="product__img">
-                    <img src="img/2.webp" alt="Картинка товара">
-                  </div>
-                </div>
-              </button>
-
-              <div class="product__name">
-                Name Name Name Name Name Name Name Name NameName Name Name Name Name Name Name Name Name
-              </div>
-
-              <div class="product__price">
-                995 ₽
-              </div>
-
-              <button class="product__btn my-btn black-btn">
-                В корзину
-              </button>
-
-            </article>
-          </li>
-
-
-          <!-- <li class="products__list-item list-item">
-            <article class="list-item__wrap wrap">
-              <button class="wrap__switch-img my-btn modal-btn" data-path="modal-1">
-                <div class="image-swich">
-                  <div class="wrap__img">
-                    <img src="img/1.webp" alt="Картинка товара">
-                  </div>
-                  <div class="wrap__img">
-                    <img src="img/2.webp" alt="Картинка товара">
-                  </div>
-                </div>
-              </button>
-
-
-              <div class="descr">
-                <div class="descr__name">
-                  Name Name Name Name Name Name Name Name Name Name Name Name
-                </div>
-                <div class="descr__price">
-                  995 ₽
-                </div>
-                <button class="descr__btn my-btn black-btn" type="button">
-                  В корзину
-                </button>
-              </div>
-
-            </article>
-          </li> -->
-
-
-        </ul>
-
-        <button class="products__btn my-btn" type="button">
-          Показать ещё
-        </button>
+        </div>
 
       </div>
     </section>
@@ -507,12 +1053,53 @@
       </div>
     </section> -->
 
+    <section class="contacts" id="contacts">
+      <div class="container contacts__container">
+
+        <h2 class="contacts__title h2-title">
+          Свяжитесь с нами
+        </h2>
+
+        <div class="contacts__descr">
+          напрямую, используя <br> контактную информацию ниже
+        </div>
+
+        <ul class="contacts__list list-reset">
+          <li class="contacts__list-item">
+            Телеграм
+          </li>
+          <li class="contacts__list-item">
+            Почта
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
   </main>
   <footer class="footer">
-	<div class="container footer__container">
+  <div class="container footer__container">
 
+    <div class="footer__content content">
 
-	</div>
+      <div class="content__left left">
+        <img src="img/LE-logo-footer.webp" alt="Логотип компании">
+      </div>
+
+      <div class="content__mid mid">
+        Copyright ©2022 All rights reserved
+      </div>
+
+      <div class="content__right right">
+        design and production by <br> <a href="https://h0lloway.github.io/my-portfolio/" target="_blank"
+          style="font-weight: 600; color: #5f9f9c;">
+          Dubrovin Maksim
+        </a>
+      </div>
+
+    </div>
+
+  </div>
 </footer>
 
   <div class="modals">
