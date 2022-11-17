@@ -160,25 +160,6 @@ const heroSwiper = new Swiper('.hero__swiper', {
 
 // РАСКРЫТЬ КАРТОЧКИ // РАСКРЫТЬ КАРТОЧКИ // РАСКРЫТЬ КАРТОЧКИ // РАСКРЫТЬ КАРТОЧКИ
 
-// старый способ (рабочий, нужен сласс "hidden")
-
-// const hifgRatingItems = gsap.timeline({ paused: true })
-
-// hifgRatingItems
-//   .to(".hidden", { duration: .2, opacity: 1, visibility: "visible", display: "inline-flex" })
-
-// document.querySelector(".more-item-btn").addEventListener("click", function () {
-//   document.querySelector(".close-item-btn").classList.add("visible")
-//   document.querySelector(".more-item-btn").classList.add("hidden")
-//   hifgRatingItems.timeScale(1).play()
-// })
-// document.querySelector(".close-item-btn").addEventListener("click", function () {
-//   document.querySelector(".close-item-btn").classList.remove("visible")
-//   document.querySelector(".more-item-btn").classList.remove("hidden")
-//   hifgRatingItems.timeScale(2).reverse()
-// })
-
-// Способ получше
 const showMore = document.querySelector('.more-item-btn');
 const productsLength = document.querySelectorAll('.products-grid__item').length;
 let items = 12;

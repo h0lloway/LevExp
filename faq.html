@@ -63,7 +63,7 @@
 
   <!-- my JS -->
 
-  <script defer src="js/myModals.js"></script>
+  <script defer src="js/modal.js"></script>
   <script defer src="js/cart.js"></script>
   <script defer src="js/main.js"></script>
 </head>
@@ -132,16 +132,16 @@
 
               <!-- <li class="filling__list-item">
                 <article class="filling__product cart-product">
-                  <img class="product__img" src="img/1.webp" alt="Картинка товара">
-                  <div class="product__text">
-                    <h3 class="product__title">
+                  <img class="cart-product__img" src="img/1.webp" alt="Картинка товара">
+                  <div class="cart-product__text">
+                    <h3 class="cart-product__title">
                       Name Name Name
                     </h3>
-                    <span class="product__price">
+                    <span class="cart-product__price">
                       995 ₽
                     </span>
                   </div>
-                  <button class="product__delete my-btn" aria-label="Удалить товар">
+                  <button class="cart-product__delete my-btn" aria-label="Удалить товар">
                     <svg class="trash" width="30" height="30">
                       <use xlink:href="img/sprite.svg#trash"></use>
                     </svg>
@@ -149,9 +149,9 @@
                 </article>
               </li> -->
 
-              <li class="filling__list-item" style="display: none;">
+              <!-- <li class="filling__list-item" style="display: none;">
 
-              </li>
+              </li> -->
 
             </ul>
 
@@ -162,7 +162,7 @@
                   999 999 ₽
                 </span>
               </div>
-              <button class="filling__btn my-btn">Заказать</button>
+              <button class="filling__btn my-btn" data-graph-path="modal-order" data-graph-animation="fadeInUp">Заказать</button>
             </div>
 
           </div>
@@ -199,7 +199,7 @@
 
       <div class="content__right right">
         design and production by <br> <a href="https://h0lloway.github.io/my-portfolio/" target="_blank"
-          style="font-weight: 600; color: #5f9f9c;">
+          style="font-weight: 600; color: #635396;">
           Dubrovin Maksim
         </a>
       </div>

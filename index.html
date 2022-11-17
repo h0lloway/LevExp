@@ -63,7 +63,7 @@
 
   <!-- my JS -->
 
-  <script defer src="js/myModals.js"></script>
+  <script defer src="js/modal.js"></script>
   <script defer src="js/cart.js"></script>
   <script defer src="js/main.js"></script>
 </head>
@@ -132,16 +132,16 @@
 
               <!-- <li class="filling__list-item">
                 <article class="filling__product cart-product">
-                  <img class="product__img" src="img/1.webp" alt="Картинка товара">
-                  <div class="product__text">
-                    <h3 class="product__title">
+                  <img class="cart-product__img" src="img/1.webp" alt="Картинка товара">
+                  <div class="cart-product__text">
+                    <h3 class="cart-product__title">
                       Name Name Name
                     </h3>
-                    <span class="product__price">
+                    <span class="cart-product__price">
                       995 ₽
                     </span>
                   </div>
-                  <button class="product__delete my-btn" aria-label="Удалить товар">
+                  <button class="cart-product__delete my-btn" aria-label="Удалить товар">
                     <svg class="trash" width="30" height="30">
                       <use xlink:href="img/sprite.svg#trash"></use>
                     </svg>
@@ -149,9 +149,9 @@
                 </article>
               </li> -->
 
-              <li class="filling__list-item" style="display: none;">
+              <!-- <li class="filling__list-item" style="display: none;">
 
-              </li>
+              </li> -->
 
             </ul>
 
@@ -162,7 +162,7 @@
                   999 999 ₽
                 </span>
               </div>
-              <button class="filling__btn my-btn">Заказать</button>
+              <button class="filling__btn my-btn" data-graph-path="modal-order" data-graph-animation="fadeInUp">Заказать</button>
             </div>
 
           </div>
@@ -250,20 +250,20 @@
               <button class="product__switch-img my-btn modal-btn" data-path="modal-1">
                 <span class="image-swich">
                   <span class="product__img">
-                    <img src="img/1.webp" alt="Картинка товара">
+                    <img src="img/card-1-1.webp" alt="Картинка товара">
                   </span>
                   <span class="product__img">
-                    <img src="img/2.webp" alt="Картинка товара">
+                    <img src="img/card-1-2.webp" alt="Картинка товара">
                   </span>
                 </span>
               </button>
 
               <h3 class="product__name">
-                VINTERFINT
+                VINTERFINT Декоративная лошадь
               </h3>
 
               <div class="product__price">
-                409 ₽
+                1 229 ₽
               </div>
 
               <button class="product__btn my-btn black-btn">
@@ -279,20 +279,20 @@
               <button class="product__switch-img my-btn modal-btn" data-path="modal-2">
                 <span class="image-swich">
                   <span class="product__img">
-                    <img src="img/3.webp" alt="Картинка товара">
+                    <img src="img/card-2-1.webp" alt="Картинка товара">
                   </span>
                   <span class="product__img">
-                    <img src="img/4.webp" alt="Картинка товара">
+                    <img src="img/card-2-2.webp" alt="Картинка товара">
                   </span>
                 </span>
               </button>
 
               <h3 class="product__name">
-                VINTERFINT
+                VINTERFINT Ёлочные игрушки (3шт.)
               </h3>
 
               <div class="product__price">
-                379 ₽
+                589 ₽
               </div>
 
               <button class="product__btn my-btn black-btn">
@@ -308,20 +308,20 @@
               <button class="product__switch-img my-btn modal-btn" data-path="modal-3">
                 <span class="image-swich">
                   <span class="product__img">
-                    <img src="img/5.webp" alt="Картинка товара">
+                    <img src="img/card-3-1.webp" alt="Картинка товара">
                   </span>
                   <span class="product__img">
-                    <img src="img/6.webp" alt="Картинка товара">
+                    <img src="img/card-3-2.webp" alt="Картинка товара">
                   </span>
                 </span>
               </button>
 
               <h3 class="product__name">
-                VINTERFINT
+                VINTERFINT Дорожка на стол <br><br>
               </h3>
 
               <div class="product__price">
-                1229 ₽
+                409 ₽
               </div>
 
               <button class="product__btn my-btn black-btn">
@@ -337,20 +337,20 @@
               <button class="product__switch-img my-btn modal-btn" data-path="modal-4">
                 <span class="image-swich">
                   <span class="product__img">
-                    <img src="img/7.webp" alt="Картинка товара">
+                    <img src="img/card-4-1.webp" alt="Картинка товара">
                   </span>
                   <span class="product__img">
-                    <img src="img/8.webp" alt="Картинка товара">
+                    <img src="img/card-4-2.webp" alt="Картинка товара">
                   </span>
                 </span>
               </button>
 
               <h3 class="product__name">
-                VINTERFINT
+                VINTERFINT Декоративные украшения (2шт.)
               </h3>
 
               <div class="product__price">
-                1509 ₽
+                1 379 ₽
               </div>
 
               <button class="product__btn my-btn black-btn">
@@ -366,20 +366,20 @@
               <button class="product__switch-img my-btn modal-btn" data-path="modal-1">
                 <span class="image-swich">
                   <span class="product__img">
-                    <img src="img/1.webp" alt="Картинка товара">
+                    <img src="img/card-5-1.webp" alt="Картинка товара">
                   </span>
                   <span class="product__img">
-                    <img src="img/2.webp" alt="Картинка товара">
+                    <img src="img/card-5-2.webp" alt="Картинка товара">
                   </span>
                 </span>
               </button>
 
               <h3 class="product__name">
-                VINTERFINT
+                VINTERFINT Ёлочные игрушки (3шт.)
               </h3>
 
               <div class="product__price">
-                759 ₽
+                939 ₽
               </div>
 
               <button class="product__btn my-btn black-btn">
@@ -395,20 +395,20 @@
               <button class="product__switch-img my-btn modal-btn" data-path="modal-2">
                 <span class="image-swich">
                   <span class="product__img">
-                    <img src="img/3.webp" alt="Картинка товара">
+                    <img src="img/card-6-1.webp" alt="Картинка товара">
                   </span>
                   <span class="product__img">
-                    <img src="img/4.webp" alt="Картинка товара">
+                    <img src="img/card-6-2.webp" alt="Картинка товара">
                   </span>
                 </span>
               </button>
 
               <h3 class="product__name">
-                VINTERFINT
+                VINTERFINT Ёлочные игрушки (2шт.)
               </h3>
 
               <div class="product__price">
-                995 ₽
+                759 ₽
               </div>
 
               <button class="product__btn my-btn black-btn">
@@ -424,20 +424,20 @@
               <button class="product__switch-img my-btn modal-btn" data-path="modal-3">
                 <span class="image-swich">
                   <span class="product__img">
-                    <img src="img/5.webp" alt="Картинка товара">
+                    <img src="img/card-7-1.webp" alt="Картинка товара">
                   </span>
                   <span class="product__img">
-                    <img src="img/6.webp" alt="Картинка товара">
+                    <img src="img/card-7-2.webp" alt="Картинка товара">
                   </span>
                 </span>
               </button>
 
               <h3 class="product__name">
-                VINTERFINT
+                VINTERFINT Ёлочные игрушки (3шт.)
               </h3>
 
               <div class="product__price">
-                995 ₽
+                669 ₽
               </div>
 
               <button class="product__btn my-btn black-btn">
@@ -453,20 +453,20 @@
               <button class="product__switch-img my-btn modal-btn" data-path="modal-4">
                 <span class="image-swich">
                   <span class="product__img">
-                    <img src="img/7.webp" alt="Картинка товара">
+                    <img src="img/card-8-1.webp" alt="Картинка товара">
                   </span>
                   <span class="product__img">
-                    <img src="img/8.webp" alt="Картинка товара">
+                    <img src="img/card-8-2.webp" alt="Картинка товара">
                   </span>
                 </span>
               </button>
 
               <h3 class="product__name">
-                VINTERFINT
+                VINTERFINT Ёлочные игрушки (4шт.)
               </h3>
 
               <div class="product__price">
-                995 ₽
+                469 ₽
               </div>
 
               <button class="product__btn my-btn black-btn">
@@ -482,20 +482,20 @@
               <button class="product__switch-img my-btn modal-btn" data-path="modal-1">
                 <span class="image-swich">
                   <span class="product__img">
-                    <img src="img/1.webp" alt="Картинка товара">
+                    <img src="img/card-9-1.webp" alt="Картинка товара">
                   </span>
                   <span class="product__img">
-                    <img src="img/2.webp" alt="Картинка товара">
+                    <img src="img/card-9-2.webp" alt="Картинка товара">
                   </span>
                 </span>
               </button>
 
               <h3 class="product__name">
-                VINTERFINT
+                VINTERFINT Ёлочные игрушки (6шт.)
               </h3>
 
               <div class="product__price">
-                995 ₽
+                419 ₽
               </div>
 
               <button class="product__btn my-btn black-btn">
@@ -511,20 +511,20 @@
               <button class="product__switch-img my-btn modal-btn" data-path="modal-2">
                 <span class="image-swich">
                   <span class="product__img">
-                    <img src="img/3.webp" alt="Картинка товара">
+                    <img src="img/card-10-1.webp" alt="Картинка товара">
                   </span>
                   <span class="product__img">
-                    <img src="img/4.webp" alt="Картинка товара">
+                    <img src="img/card-10-2.webp" alt="Картинка товара">
                   </span>
                 </span>
               </button>
 
               <h3 class="product__name">
-                VINTERFINT
+                VINTERFINT Кухонные полотенца (2шт.)
               </h3>
 
               <div class="product__price">
-                995 ₽
+                379 ₽
               </div>
 
               <button class="product__btn my-btn black-btn">
@@ -540,20 +540,20 @@
               <button class="product__switch-img my-btn modal-btn" data-path="modal-3">
                 <span class="image-swich">
                   <span class="product__img">
-                    <img src="img/5.webp" alt="Картинка товара">
+                    <img src="img/card-11-1.webp" alt="Картинка товара">
                   </span>
                   <span class="product__img">
-                    <img src="img/6.webp" alt="Картинка товара">
+                    <img src="img/card-11-2.webp" alt="Картинка товара">
                   </span>
                 </span>
               </button>
 
               <h3 class="product__name">
-                VINTERFINT
+                VINTERFINT Рождественский венок
               </h3>
 
               <div class="product__price">
-                995 ₽
+                1 509 ₽
               </div>
 
               <button class="product__btn my-btn black-btn">
@@ -569,20 +569,20 @@
               <button class="product__switch-img my-btn modal-btn" data-path="modal-4">
                 <span class="image-swich">
                   <span class="product__img">
-                    <img src="img/7.webp" alt="Картинка товара">
+                    <img src="img/card-12-1.webp" alt="Картинка товара">
                   </span>
                   <span class="product__img">
-                    <img src="img/8.webp" alt="Картинка товара">
+                    <img src="img/card-12-2.webp" alt="Картинка товара">
                   </span>
                 </span>
               </button>
 
               <h3 class="product__name">
-                VINTERFINT
+                VINTERFINT Бумажная звезда <br><br>
               </h3>
 
               <div class="product__price">
-                995 ₽
+                529 ₽
               </div>
 
               <button class="product__btn my-btn black-btn">
@@ -598,20 +598,20 @@
               <button class="product__switch-img my-btn modal-btn" data-path="modal-1">
                 <span class="image-swich">
                   <span class="product__img">
-                    <img src="img/1.webp" alt="Картинка товара">
+                    <img src="img/card-13-1.webp" alt="Картинка товара">
                   </span>
                   <span class="product__img">
-                    <img src="img/2.webp" alt="Картинка товара">
+                    <img src="img/card-13-2.webp" alt="Картинка товара">
                   </span>
                 </span>
               </button>
 
               <h3 class="product__name">
-                VINTERFINT
+                VINTERFINT Бумажная звезда <br><br>
               </h3>
 
               <div class="product__price">
-                995 ₽
+                399 ₽
               </div>
 
               <button class="product__btn my-btn black-btn">
@@ -627,20 +627,20 @@
               <button class="product__switch-img my-btn modal-btn" data-path="modal-2">
                 <span class="image-swich">
                   <span class="product__img">
-                    <img src="img/3.webp" alt="Картинка товара">
+                    <img src="img/card-14-1.webp" alt="Картинка товара">
                   </span>
                   <span class="product__img">
-                    <img src="img/4.webp" alt="Картинка товара">
+                    <img src="img/card-14-2.webp" alt="Картинка товара">
                   </span>
                 </span>
               </button>
 
               <h3 class="product__name">
-                VINTERFINT
+                VINTERFINT Бумажная звезда <br><br>
               </h3>
 
               <div class="product__price">
-                995 ₽
+                399 ₽
               </div>
 
               <button class="product__btn my-btn black-btn">
@@ -656,20 +656,20 @@
               <button class="product__switch-img my-btn modal-btn" data-path="modal-3">
                 <span class="image-swich">
                   <span class="product__img">
-                    <img src="img/5.webp" alt="Картинка товара">
+                    <img src="img/card-15-1.webp" alt="Картинка товара">
                   </span>
                   <span class="product__img">
-                    <img src="img/6.webp" alt="Картинка товара">
+                    <img src="img/card-15-2.webp" alt="Картинка товара">
                   </span>
                 </span>
               </button>
 
               <h3 class="product__name">
-                VINTERFINT
+                VINTERFINT Ароматическая свеча
               </h3>
 
               <div class="product__price">
-                995 ₽
+                189 ₽
               </div>
 
               <button class="product__btn my-btn black-btn">
@@ -685,20 +685,20 @@
               <button class="product__switch-img my-btn modal-btn" data-path="modal-4">
                 <span class="image-swich">
                   <span class="product__img">
-                    <img src="img/7.webp" alt="Картинка товара">
+                    <img src="img/card-20-1.webp" alt="Картинка товара">
                   </span>
                   <span class="product__img">
-                    <img src="img/8.webp" alt="Картинка товара">
+                    <img src="img/card-20-2.webp" alt="Картинка товара">
                   </span>
                 </span>
               </button>
 
               <h3 class="product__name">
-                VINTERFINT
+                VINTERFINT Ароматические свечи (30шт.)
               </h3>
 
               <div class="product__price">
-                995 ₽
+                349 ₽
               </div>
 
               <button class="product__btn my-btn black-btn">
@@ -711,23 +711,23 @@
           <!-- #17 -->
           <li class="products-grid__item list-item">
             <article class="product">
-              <button class="product__switch-img my-btn modal-btn" data-path="modal-1">
+              <button class="product__switch-img my-btn modal-btn" data-path="modal-4">
                 <span class="image-swich">
                   <span class="product__img">
-                    <img src="img/1.webp" alt="Картинка товара">
+                    <img src="img/card-16-1.webp" alt="Картинка товара">
                   </span>
                   <span class="product__img">
-                    <img src="img/2.webp" alt="Картинка товара">
+                    <img src="img/card-16-2.webp" alt="Картинка товара">
                   </span>
                 </span>
               </button>
 
               <h3 class="product__name">
-                VINTERFINT
+                VINTERFINT Ароматические свечи (30шт.)
               </h3>
 
               <div class="product__price">
-                995 ₽
+                349 ₽
               </div>
 
               <button class="product__btn my-btn black-btn">
@@ -740,23 +740,23 @@
           <!-- #18 -->
           <li class="products-grid__item list-item">
             <article class="product">
-              <button class="product__switch-img my-btn modal-btn" data-path="modal-2">
+              <button class="product__switch-img my-btn modal-btn" data-path="modal-1">
                 <span class="image-swich">
                   <span class="product__img">
-                    <img src="img/3.webp" alt="Картинка товара">
+                    <img src="img/card-17-1.webp" alt="Картинка товара">
                   </span>
                   <span class="product__img">
-                    <img src="img/4.webp" alt="Картинка товара">
+                    <img src="img/card-17-2.webp" alt="Картинка товара">
                   </span>
                 </span>
               </button>
 
               <h3 class="product__name">
-                VINTERFINT
+                VINTERFINT Ароматические свечи (2шт.)
               </h3>
 
               <div class="product__price">
-                995 ₽
+                539 ₽
               </div>
 
               <button class="product__btn my-btn black-btn">
@@ -769,23 +769,23 @@
           <!-- #19 -->
           <li class="products-grid__item list-item">
             <article class="product">
-              <button class="product__switch-img my-btn modal-btn" data-path="modal-3">
+              <button class="product__switch-img my-btn modal-btn" data-path="modal-2">
                 <span class="image-swich">
                   <span class="product__img">
-                    <img src="img/5.webp" alt="Картинка товара">
+                    <img src="img/card-18-1.webp" alt="Картинка товара">
                   </span>
                   <span class="product__img">
-                    <img src="img/6.webp" alt="Картинка товара">
+                    <img src="img/card-18-2.webp" alt="Картинка товара">
                   </span>
                 </span>
               </button>
 
               <h3 class="product__name">
-                VINTERFINT
+                STRALA Стойка для звезды <br><br>
               </h3>
 
               <div class="product__price">
-                995 ₽
+                1 089 ₽
               </div>
 
               <button class="product__btn my-btn black-btn">
@@ -798,6 +798,35 @@
           <!-- #20 -->
           <li class="products-grid__item list-item">
             <article class="product">
+              <button class="product__switch-img my-btn modal-btn" data-path="modal-3">
+                <span class="image-swich">
+                  <span class="product__img">
+                    <img src="img/card-19-1.webp" alt="Картинка товара">
+                  </span>
+                  <span class="product__img">
+                    <img src="img/card-19-2.webp" alt="Картинка товара">
+                  </span>
+                </span>
+              </button>
+
+              <h3 class="product__name">
+                STRALA Подвесной шнур для звезды
+              </h3>
+
+              <div class="product__price">
+                389 ₽
+              </div>
+
+              <button class="product__btn my-btn black-btn">
+                В корзину
+              </button>
+
+            </article>
+          </li>
+
+          <!-- #20 -->
+          <!-- <li class="products-grid__item list-item">
+            <article class="product">
               <button class="product__switch-img my-btn modal-btn" data-path="modal-4">
                 <span class="image-swich">
                   <span class="product__img">
@@ -822,10 +851,10 @@
               </button>
 
             </article>
-          </li>
+          </li> -->
 
           <!-- #21 -->
-          <li class="products-grid__item list-item">
+          <!-- <li class="products-grid__item list-item">
             <article class="product">
               <button class="product__switch-img my-btn modal-btn" data-path="modal-3">
                 <span class="image-swich">
@@ -851,10 +880,10 @@
               </button>
 
             </article>
-          </li>
+          </li> -->
 
           <!-- #22 -->
-          <li class="products-grid__item list-item">
+          <!-- <li class="products-grid__item list-item">
             <article class="product">
               <button class="product__switch-img my-btn modal-btn" data-path="modal-4">
                 <span class="image-swich">
@@ -880,7 +909,7 @@
               </button>
 
             </article>
-          </li>
+          </li> -->
 
 
         </ul>
@@ -1038,6 +1067,9 @@
 
         <div class="reviews__content">
 
+          <!-- <img src="img/reviews.webp" alt="Отзывы"> -->
+          <img src="img/coming_soon.webp" alt="Скоро">
+
         </div>
 
       </div>
@@ -1066,10 +1098,18 @@
 
         <ul class="contacts__list list-reset">
           <li class="contacts__list-item">
-            Телеграм
+            <a class="contacts__list-item-link" href="#">
+              <svg class="" width="110" height="110">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a>
           </li>
           <li class="contacts__list-item">
-            Почта
+            <a class="contacts__list-item-link" href="#">
+              <svg class="" width="110" height="110">
+                <use xlink:href="img/sprite.svg#mail"></use>
+              </svg>
+            </a>
           </li>
         </ul>
 
@@ -1092,7 +1132,7 @@
 
       <div class="content__right right">
         design and production by <br> <a href="https://h0lloway.github.io/my-portfolio/" target="_blank"
-          style="font-weight: 600; color: #5f9f9c;">
+          style="font-weight: 600; color: #635396;">
           Dubrovin Maksim
         </a>
       </div>
@@ -1102,65 +1142,64 @@
   </div>
 </footer>
 
-  <div class="modals">
-	<div class="modal-overlay">
+  <div class="modal">
+	<div class="modal__container order-modal" role="dialog" aria-modal="true" data-graph-target="modal-order">
 
-		<!-- Вход -->
-		<div class="modal modal--1" data-target="modal-1">
-			<div class="modal-wrap">
-				<div class="modal-content content">
+		<div class="modal-content order-modal__content">
 
-					<div class="content__img">
-						<img src="img/1.webp" alt="Картинка товара">
-						<img src="img/2.webp" alt="Картинка товара">
-					</div>
+			<div class="order-modal__top">
+				<h2 class="order-modal__title">
+					Оформление заказа
+				</h2>
+				<span class="order-modal__number">Заказ № 3456 67</span>
+			</div>
+			<div class="order-modal__info">
+				<div class="order-modal__quantity order-modal__info-item">
+					Товаров в заказе: <span>3 шт</span>
+				</div>
+				<div class="order-modal__summ order-modal__info-item">
+					Общая сумма заказа: <span>568 789 ₽</span>
+				</div>
+				<div class="order-modal__products order-modal__info-item">
+					<button class="order-modal__btn my-btn">Состав заказа</button>
 
-					<div class="content__name">
-						Name Name Name Name Name
-					</div>
-
-					<div class="content__descr">
-						Тут может быть какое-то описание товара
-					</div>
-
-					<div class="content__digit">
-
-						<span class="price">995 ₽</span>
-						<span class="weight">0.15 кг</span>
-
-					</div>
+					<ul class="order-modal__list list-reset">
+						<!-- <li class="order-modal__item">
+							<article class="order-modal__product order-product">
+								<img class="order-product__img" src="img/1.webp" alt="Картинка">
+								<div class="order-product__text">
+									<h3 class="order-product__title">VINTERFINT</h3>
+									<span class="order-product__price">995 ₽</span>
+								</div>
+								<button class="order-product__delete my-btn">Удалить</button>
+							</article>
+						</li> -->
+					</ul>
 
 				</div>
 			</div>
-			<button class="close-modal-btn my-btn">
-				<span></span>
-			</button>
-		</div>
 
+			<form class="order-modal__form order" action="#">
 
-		<!-- Модалка с диванами -->
-		<div class="modal modal--2" data-target="modal-two">
-			<div class="modal-wrap">
+        <input type="hidden" name="theme" value="Обратный звонок">
+        <input type="hidden" name="admin_email[]" value="gvozdb27@gmail.com">
+        <input type="hidden" name="form_subject" value="Заявка с сайта Сайт">
 
-				<div class="modal-content">
-					1
-				</div>
+				<label class="order__label">
+					<span class="order__text">Ваше имя</span>
+					<input class="order__input" type="text" name="Имя">
+				</label>
+				<label class="order__label">
+					<span class="order__text">Номер телефона</span>
+					<input class="order__input" type="tel" name="Телефон" placeholder="+7 (___)___-__-__">
+				</label>
+				<label class="order__label">
+					<span class="order__text">Электронная почта</span>
+					<input class="order__input" type="email" name="Email" placeholder="post@gmail.com">
+				</label>
+				<button class="order__btn my-btn black-btn">Оформить заказ</button>
+			</form>
 
-
-			</div>
-			<button class="close-modal-btn my-btn">
-				<span></span>
-			</button>
-		</div>
-
-		<!-- Модалка спасибо за покупку -->
-		<div class="modal modal--3" data-target="modal-thanks">
-			<div class="modal-content">
-				3
-			</div>
-			<button class="close-modal-btn my-btn" type="button">
-				<span></span>
-			</button>
 		</div>
 
 	</div>
